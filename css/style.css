@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial';
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+.box{
+    width: 670px;
+    height: 480px;
+    position: relative;
+    filter: blur(15px);
+    background-size: 100%!important;
+    background-repeat: no-repeat!important;
+}
+.box-left{
+    background: url('../img/a.png');
+    margin-bottom: 40px;
+}
+.box-right{
+    background: url('../img/b.jpg');
+}
+.box span{
+    height: 30px;
+    width: 30px;
+    position: absolute;   
+}
+.box span.difference.disabled{
+    pointer-events: none;
+    border: 1px solid #ff0000;
+}
+.box span.one{
+    top: 45px;
+    left: 45px;
+}
+.box span.two{
+    top: 75px;
+    left: 240px;
+}
+.box span.three{
+    top: 194px;
+    left: 474px;
+}
+.box span.four{
+    top: 225px;
+    left: 596px;
+    height: 60px;
+    width: 60px;
+}
+.box span.five{
+    top: 335px;
+    left: 266px;
+    height: 60px;
+    width: 60px;
+}
+.form{
+    display: none;
+    text-align: center;
+}
+.rank span{
+    display: block;
+}
+.progress-bar{
+    width: 100%;
+    background-color: #ff0000;
+}
+.actual-progress{
+    height: 10px;
+    width: 0%;
+    background-color: #008000;
+}
+a{
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #008000;
+    padding: 10px;
+}
+a:hover{
+    background-color: #008000;
+    color: #fff;
+    border-radius: 47%;
+}
+button{
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: #008000;
+    color: #fff;
+    padding: 3px 10px;
+}
+@media screen and (max-width:425px){
+    .box{
+        height: 300px;
+    }
+    .box span.one{
+        top: 22px;
+        left: 22px;
+    }
+    .box span.two{
+        top: 42px;
+        left: 148px;
+    }
+    .box span.three{
+        top: 117px;
+        left: 293px;
+    }
+    .box span.four{
+        top: 141px;
+        left: 362px;
+        height: 40px;
+        width: 40px;
+    }
+    .box span.five{
+        top: 203px;
+        left: 156px;
+    }
+}
+@media screen and (max-width:375px){
+    .box span.one{
+        top: 18px;
+        left: 18px;
+    }
+    .box span.two{
+        top: 35px;
+        left: 129px;
+    }
+    .box span.three{
+        top: 103px;
+        left: 259px;
+    }
+    .box span.four{
+        top: 122px;
+        left: 329px;
+    }
+    .box span.five{
+        top: 176px;
+        left: 135px;
+    }
+}
+@media screen and (max-width:360px){
+    .box span.two{
+        left: 122px;
+    }
+    .box span.three{
+        left: 249px;
+        top: 98px;
+    }
+    .box span.four{
+        top: 117px;
+        left: 315px;
+    }
+}
+@media screen and (max-width:320px){
+    .box{
+        height: 300px;
+    }
+    .box span.one{
+        top: 13px;
+        left: 13px;
+    }
+    .box span.two{
+        top: 30px;
+        left: 107px;
+    }
+    .box span.three{
+        top: 86px;
+        left: 218px;
+    }
+    .box span.four{
+        top: 103px;
+        left: 276px;
+    }
+    .box span.five{
+        top: 146px;
+        left: 114px;
+    }
+}

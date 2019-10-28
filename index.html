@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="author" content="Dawid Wierzbicki">
+  <meta name="description" content="Recruitment Task">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+      
+    <div class="row">
+        <h2>Twój czas <span>00:00:00</span></h2>
+    </div>
+     <div class="row">
+          <div class="progress-bar">
+              <div class="actual-progress"></div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-6 box box-left">
+              <span class="difference one" data-id="one"></span>
+              <span class="difference two" data-id="two"></span>
+              <span class="difference three" data-id="three"></span>
+              <span class="difference four" data-id="four"></span>
+              <span class="difference five" data-id="five"></span>
+          </div>
+          <div class="col-md-6  box box-right">
+              <span class="difference one" data-id="one"></span>
+              <span class="difference two" data-id="two"></span>
+              <span class="difference three" data-id="three"></span>
+              <span class="difference four" data-id="four"></span>
+              <span class="difference five" data-id="five"></span>
+          </div>
+      </div>
+      <div class="row">
+          <a href="javascript:void(0)">Start</a>
+      </div>
+      <div class="row">
+          <h3>Znaleziono <span>0</span> z 5 różnic</h3>
+      </div>
+      <div class="row form">
+          <label for="">Podaj swój nick
+              <input type="text" class="user">
+          </label>
+          <button>Zapisz</button>
+      </div>
+      <div class="row">
+          <div class="rank">
+              <input type="hidden" class="startTime">
+              <input type="hidden" class="endTime">
+              <input type="hidden" class="playTime">
+              <p>Ranking zawodników: </p>
+              <div class="scores"></div>
+          </div>
+      </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
